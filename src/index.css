@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/autoplay';
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+
+.animate-floatY {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-x {
+  animation: scroll-x 25s linear infinite;
+}
+
+@keyframes slide-logo {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: calc(85% - 18rem); /* 18rem = 288px logo width */
+  }
+}
+
+.animate-slide-logo {
+  animation: slide-logo 18s ease-in-out infinite alternate;
+}
