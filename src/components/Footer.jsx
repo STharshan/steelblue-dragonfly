@@ -19,7 +19,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-200">
         {/* Company Info */}
         <div className="space-y-4">
-          <img src="/logo.webp" alt="logo" className="w-70 h-40" />
+          <img src="/logo.webp" alt="logo" className="w-60 h-32 mx-auto sm:mx-0 object-contain" />
           <p className="text-sm text-gray-800">
             Feel free to get in touch with us. We will be happy to answer any
             questions about our services and products.

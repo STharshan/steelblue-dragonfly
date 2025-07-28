@@ -21,7 +21,7 @@ export default function Hero() {
         <p className="text-base font-semibold uppercase tracking-wide">
           Fair Prices. Trusted Service. Based just off Abbey Lane, Leicester.
         </p>
-        <h1 className="text-5xl md:text-7xl font-extrabold mt-4 leading-tight max-w-6xl">
+        <h1 className="text-5xl md:text-6xl font-extrabold mt-4 leading-tight max-w-6xl">
           Class 4 & 7 MOT Testing,<br />
           Servicing, Diagnostics, and Repairs
         </h1>

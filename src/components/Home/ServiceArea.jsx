@@ -31,7 +31,7 @@ export default function ServiceArea() {
   ];
 
   return (
-    <section className="bg-white py-16 px-4 md:px-10 max-w-7xl mx-auto">
+    <section id="services" className="bg-white py-16 px-4 md:px-10 max-w-7xl mx-auto">
       {/* Title */}
       <div className="text-center mb-12 mt-10">
         <p className="uppercase text- tracking-wide font-semibold mb-2 flex items-center justify-center gap-2">

@@ -4,7 +4,7 @@ import { BsFilterRight } from "react-icons/bs";
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#0F1116] text-white px-4 md:px-20 py-10">
+    <section id="about" className="bg-[#0F1116] text-white px-4 md:px-20 py-10">
       {/* Top info bar */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-4 text-center text-sm font-medium mb-10">
         <div className="flex flex-col md:flex-row items-center gap-5">
