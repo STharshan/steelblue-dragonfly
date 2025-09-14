@@ -67,7 +67,12 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-sm text-gray-700 font-medium">Phone</p>
-                <p className="font-semibold">01162669749</p>
+                <a
+                  href="tel:+441162669749" // Phone number with country code
+                  className="font-semibold hover:underline"
+                >
+                  01162669749
+                </a>
               </div>
             </div>
           </div>
@@ -75,7 +80,7 @@ export default function ContactSection() {
           {/* Social Icons */}
           <div className="flex items-center gap-3 mt-5">
             <a
-              href="#"
+              href="#https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D"
               className="w-10 h-10 rounded bg-black flex items-center justify-center text-white"
             >
               <FaInstagram className="text-xl" />
@@ -87,7 +92,7 @@ export default function ContactSection() {
               <FaFacebookF className="text-xl" />
             </a>
             <a
-              href="#"
+              href="https://wa.me/447526227041"
               className="w-10 h-10 rounded bg-[#25d366] flex items-center justify-center text-white"
             >
               <FaWhatsapp className="text-xl" />

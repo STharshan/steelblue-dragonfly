@@ -22,8 +22,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3 mt-2 sm:mt-0">
           <span>Follow Us:</span>
-          <FaFacebookF className="cursor-pointer text-lg hover:text-blue-600" />
-          <FaInstagram className="cursor-pointer text-lg hover:text-pink-500" />
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF className="cursor-pointer text-lg hover:text-blue-600" />
+          </a>
+          <a href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D" target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="cursor-pointer text-lg hover:text-pink-500" />
+          </a>
         </div>
       </div>
 
@@ -32,18 +36,29 @@ export default function Navbar() {
         {/* Logo + WhatsApp */}
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <img src="/logo.webp" alt="Logo" className="w-40 h-20 object-contain" />
-          <div className="hidden sm:flex items-center gap-2 text-black hover:text-green-500 cursor-pointer">
+
+          <a
+            href="https://wa.me/447526227041"  // WhatsApp API link with the phone number
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-2 text-black hover:text-green-500 cursor-pointer"
+          >
             <FaWhatsapp className="text-4xl" />
             <span className="font-medium">+44 7526 227041</span>
-          </div>
+          </a>
         </div>
 
         {/* Call us */}
         <div className="hidden sm:flex items-center gap-2 text-black">
           <MdHeadsetMic className="text-4xl" />
           <div className="text-left text-sm">
-            <p className="text-gray-500">Call US 24/7</p>
-            <p className="font-medium text-lg hover:text-gray-400 cursor-pointer">0116 2669749</p>
+            <p className="text-gray-500">Call Us 24/7</p>
+            <a
+              href="tel:+441162669749" // The phone number with country code
+              className="font-medium text-lg hover:text-gray-400 cursor-pointer"
+            >
+              0116 2669749
+            </a>
           </div>
         </div>
       </div>

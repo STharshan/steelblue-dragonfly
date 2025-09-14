@@ -28,10 +28,10 @@ export default function Footer() {
             <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
               <FaFacebookF className="hover:text-blue-700" />
             </a>
-            <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
+            <a href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
               <FaInstagram className="hover:text-pink-700" />
             </a>
-            <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
+            <a href="https://wa.me/447526227041" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
               <FaWhatsapp className="hover:text-green-700" />
             </a>
           </div>
@@ -82,9 +82,34 @@ export default function Footer() {
               <FaPhoneAlt className="text-xl mt-1" />
               <div>
                 <p className="font-semibold">Phone</p>
-                <p className="text-lg font-semibold">0116 2669749</p>
+                <a
+                  href="tel:+441162669749" // Phone number with country code
+                  className="text-lg font-semibold hover:text-gray-500"
+                >
+                  0116 2669749
+                </a>
               </div>
             </div>
+          </div>
+          <div className="ml-7 mt-2 text-gray-700 font-semibold">
+            <ul className="space-y-1">
+              <li>
+                <Link
+                  to="/terms&condition" // Redirects to the Terms & Conditions page
+                  className="hover:text-gray-500 transition"
+                >
+                  Term & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/privacy-policy" // Assuming you have a privacy policy page as well
+                  className="hover:text-gray-500 transition"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -113,17 +138,20 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar – full width black background */}
-      <div className=" w-340 -ml-10 bg-black mt-20">
-        <div className="px-24 text-center py-5 text-gray-300 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p>
+      <div className="w-340 -ml-10 bg-black mt-20">
+        <div className="px-24 py-5 text-gray-300 flex items-center justify-end gap-100">
+          <p className="text-center">
             <span>© 2025</span> All Rights Reserved By{" "}
-            <span className="text-red-600 font-bold">Ansely</span>.
+            <a target="_blank" href="https://www.ansely.co.uk/" className="text-red-600 font-bold hover:underline">
+              Ansely
+            </a>
           </p>
-          <a href="#" className="text-gray-400 bg-white rounded-full p-2.5 hover:text-white transition">
+          <a href="/" className="text-gray-400 bg-white rounded-full p-2.5 hover:text-white transition">
             <FaArrowUp className="text-lg" />
           </a>
         </div>
       </div>
+
     </footer>
   );
 }

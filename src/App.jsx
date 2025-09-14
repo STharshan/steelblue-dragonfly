@@ -13,6 +13,8 @@ import Repair from "./pages/Repair"
 import Service from "./pages/Service"
 import Timingchain from "./pages/Timingchain"
 import ScrollToTop from './components/ScrollToTop';
+import TermsConditions from './components/Term';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
 
@@ -25,15 +27,17 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="cam-belts-wet-belts-timing-chains" element={<Cambelt />} />
-            <Route path="/class-4-7-mot-testing" element={<Mot />}/>
-            <Route path="/contact" element={<Contact />}/>
-            <Route path="diagnostics" element={<Diagnostics />}/>
-            <Route path="/gallery" element={<Gallery />}/>
-            <Route path="/hy-carbon" element={<Carbon />}/>
-            <Route path="/legal-notice" element={<Legal />}/>
-            <Route path="/repairs" element={<Repair />}/>
-            <Route path="/servicing" element={<Service />}/>
-            <Route path="/timing-chains-wet-belts" element={<Timingchain />}/>
+            <Route path="/class-4-7-mot-testing" element={<Mot />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="diagnostics" element={<Diagnostics />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/hy-carbon" element={<Carbon />} />
+            <Route path="/legal-notice" element={<Legal />} />
+            <Route path="/repairs" element={<Repair />} />
+            <Route path="/servicing" element={<Service />} />
+            <Route path="/timing-chains-wet-belts" element={<Timingchain />} />
+            <Route path="/terms&condition" element={<TermsConditions />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />

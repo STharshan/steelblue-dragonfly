@@ -30,8 +30,10 @@ export default function Hero() {
           <button className="bg-gray-400 text-white px-6 py-4 rounded-md font-semibold uppercase hover:bg-white hover:text-black cursor-pointer transition">
             Get More Info
           </button>
-          <button className="border-2 border-white text-white px-6 py-3 rounded-md uppercase font-semibold hover:bg-white hover:text-black cursor-pointer transition">
-            About Us
+          <button
+            className="border-2 border-white text-white px-6 py-3 rounded-md uppercase font-semibold hover:bg-white hover:text-black cursor-pointer transition"
+          >
+            <a href="#about" className="w-full h-full block">About Us</a>
           </button>
         </div>
       </div>

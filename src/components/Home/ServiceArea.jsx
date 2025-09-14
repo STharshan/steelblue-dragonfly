@@ -1,5 +1,5 @@
 import { BsFilterRight, BsArrowRight, BsFilterLeft } from "react-icons/bs";
-
+import { Link } from "react-router-dom";  // Import Link from react-router-dom
 
 export default function ServiceArea() {
   const services = [
@@ -7,26 +7,31 @@ export default function ServiceArea() {
       title: "MOT Testing (Class 4 & 7)",
       desc: "Reliable MOT testing for cars, vans, and light commercial vehicles to keep you road-legal and safe.",
       img: "/head.webp",
+      link: "/class-4-7-mot-testing", // Add corresponding route path
     },
     {
       title: "Servicing",
       desc: "Comprehensive car and van servicing to ensure peak performance and prevent costly repairs.",
       img: "/clean.webp",
+      link: "/servicing", // Add corresponding route path
     },
     {
       title: "Repairs",
       desc: "From brakes to engines, we handle all types of mechanical repairs with expert care and quality parts.",
       img: "/wash.webp",
+      link: "/repairs", // Add corresponding route path
     },
     {
       title: "Diagnostics",
       desc: "Advanced fault-finding using the latest diagnostic tools to quickly identify and fix issues.",
       img: "/service.webp",
+      link: "/diagnostics", // Add corresponding route path
     },
     {
       title: "Timing Chains & Wet Belts",
       desc: "We specialise in high-quality timing chain and wet belt replacements, to keep your engine running like new.",
       img: "/head.webp",
+      link: "/timing-chains-wet-belts", // Add corresponding route path
     },
   ];
 
@@ -61,10 +66,13 @@ export default function ServiceArea() {
               <p className="text-black leading-relaxed mb-6">
                 {item.desc}
               </p>
-              <button className="mt-auto border border-gray-300 px-6 py-4 hover:bg-black hover:text-white font-semibold text-black rounded transition flex items-center gap-2">
+              <Link
+                to={item.link}  // Link to the corresponding route
+                className="mt-auto border border-gray-300 px-6 py-4 hover:bg-black hover:text-white font-semibold text-black rounded transition flex items-center gap-2"
+              >
                 VIEW DETAILS
                 <BsArrowRight className="text-lg" />
-              </button>
+              </Link>
             </div>
           </div>
         ))}
