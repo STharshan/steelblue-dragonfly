@@ -111,7 +111,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="text-gray-700">
                         <p><strong>UNIT THREE MOTS LTD</strong></p>
-                        <p>Email: <a href="mailto:info@empirescaffolding.co.uk" className="text-gray-600 hover:underline">info@empirescaffolding.co.uk</a></p>
+                        {/* <p>Email: <a href="mailto:info@empirescaffolding.co.uk" className="text-gray-600 hover:underline">info@empirescaffolding.co.uk</a></p> */}
                         <p>Phone: 0116 2669749</p>
                         <p>Address: Unit 3, 7 Wesley Street, Leicester LE4 5QG</p>
                     </div>
