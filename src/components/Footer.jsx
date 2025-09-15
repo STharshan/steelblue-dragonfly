@@ -25,7 +25,7 @@ export default function Footer() {
             questions about our services and products.
           </p>
           <div className="flex gap-4 pt-2">
-            <a href="#" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
+            <a href="https://www.facebook.com/@unitthreemots?_rdr" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">
               <FaFacebookF className="hover:text-blue-700" />
             </a>
             <a href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D" className="w-10 h-10 bg-black text-white flex items-center justify-center rounded-full">

@@ -20,7 +20,8 @@ export default function AboutSection() {
           <LiaPhoneVolumeSolid className="text-6xl mt-5 mb-5" />
           <div className="flex flex-col text-center gap-2 md:text-left">
             <p className="uppercase">Have a question?</p>
-            <p className="text-2xl font-bold">0116 2669749</p>
+            {/* Make the phone number clickable */}
+            <a href="tel:01162669749" className="text-2xl font-bold hover:text-black">0116 2669749</a>
           </div>
         </div>
 
@@ -28,13 +29,18 @@ export default function AboutSection() {
           <GrMapLocation className="text-5xl" />
           <div className="md:text-left">
             <p className="uppercase">Need a repair? Our address</p>
-            <p className="text-2xl font-semibold text-white">
+            {/* Make the address clickable and redirect to Google Maps */}
+            <a
+              href="https://www.google.com/maps?q=Unit+3+Wesley+St,+Leicester+LE4+5QG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl font-semibold text-white hover:text-gray-400"
+            >
               Unit 3 Wesley St, Leicester LE4 5QG
-            </p>
+            </a>
           </div>
         </div>
       </div>
-
 
       {/* About section content */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-5 md:mt-50 text-center md:text-left">
@@ -55,8 +61,11 @@ export default function AboutSection() {
             Whether you're in for an MOT, a service, or a more complex repair, we treat every
             vehicle like it’s our own.
           </p>
-          <button className="bg-gray-400 uppercase hover:text-black px-6 py-4 rounded-md font-semibold hover:bg-white cursor-pointer transition">
-            Get More Info
+          <button
+            className="bg-gray-400 uppercase hover:text-black px-6 py-4 rounded-md font-semibold hover:bg-white cursor-pointer transition"
+            onClick={() => window.location.href = "tel:01162669749"}
+          >
+            Call Us Today
           </button>
         </div>
 

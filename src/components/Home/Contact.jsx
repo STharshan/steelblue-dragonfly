@@ -80,20 +80,23 @@ export default function ContactSection() {
           {/* Social Icons */}
           <div className="flex items-center gap-3 mt-5">
             <a
+              target="_blank"
               href="#https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D"
-              className="w-10 h-10 rounded bg-black flex items-center justify-center text-white"
+              className="w-10 h-10 rounded bg-black flex items-center justify-center text-white hover:text-pink-500"
             >
               <FaInstagram className="text-xl" />
             </a>
             <a
-              href="#"
-              className="w-10 h-10 rounded bg-[#3b5998] flex items-center justify-center text-white"
+              target="_blank"
+              href="https://www.facebook.com/@unitthreemots?_rdr"
+              className="w-10 h-10 rounded bg-[#3b5998] flex items-center justify-center text-white hover:text-blue-800"
             >
               <FaFacebookF className="text-xl" />
             </a>
             <a
+              target="_blank"
               href="https://wa.me/447526227041"
-              className="w-10 h-10 rounded bg-[#25d366] flex items-center justify-center text-white"
+              className="w-10 h-10 rounded bg-[#25d366] flex items-center justify-center text-white hover:text-green-600"
             >
               <FaWhatsapp className="text-xl" />
             </a>

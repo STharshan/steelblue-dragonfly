@@ -27,9 +27,11 @@ export default function Hero() {
         </h1>
 
         <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <button className="bg-gray-400 text-white px-6 py-4 rounded-md font-semibold uppercase hover:bg-white hover:text-black cursor-pointer transition">
-            Get More Info
-          </button>
+          <a href="tel:01162669749">
+            <button className="bg-gray-400 text-white px-6 py-4 rounded-md font-semibold uppercase hover:bg-white hover:text-black cursor-pointer transition">
+              Call Us Today
+            </button>
+          </a>
           <button
             className="border-2 border-white text-white px-6 py-3 rounded-md uppercase font-semibold hover:bg-white hover:text-black cursor-pointer transition"
           >

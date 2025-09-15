@@ -22,7 +22,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3 mt-2 sm:mt-0">
           <span>Follow Us:</span>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/@unitthreemots?_rdr" target="_blank" rel="noopener noreferrer">
             <FaFacebookF className="cursor-pointer text-lg hover:text-blue-600" />
           </a>
           <a href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D" target="_blank" rel="noopener noreferrer">
